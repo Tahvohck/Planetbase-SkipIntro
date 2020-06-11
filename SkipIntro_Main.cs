@@ -18,6 +18,7 @@ namespace Tahvohck_Mods.JPFariasUpdates
             BindingFlags.Instance | BindingFlags.Public | BindingFlags.NonPublic;
         private static readonly int _LayerMask = 256;
         public const float VerticalAngle = 25f; // Taken from game source (CameraManager)
+        private static float BackupDistance = 40f;
 
         [LoaderOptimization(LoaderOptimization.NotSpecified)]
         public static void Init(UnityModManager.ModEntry modData)
@@ -71,7 +72,8 @@ namespace Tahvohck_Mods.JPFariasUpdates
 
                 // Snap the camera to the ground and make it look at the landing spot
                 Transform cameraTransform = CameraManager.getInstance().getTransform();
-                cameraTransform.position = shipLandingPosition + Ship.getDirection().flatDirection();
+                Vector3 localBackupVector = Ship.getDirection().flatDirection() * BackupDistance;
+                cameraTransform.position = shipLandingPosition + localBackupVector;
                 cameraTransform.LookAt(shipLandingPosition);
 
                 // Set vertical angle

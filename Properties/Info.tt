@@ -2,11 +2,11 @@
 <#@ include file="version.t4" #>
 <#@ output extension=".json" #>
 {
-    "ID":           "JPFarias-CameraOverhaul",
+    "ID":           "JPFarias-SkipIntro",
     "Author":       "Tahvohck",
     "Version":      "<#= this.version #>.<#= this.buildID #>",
 
-    "EntryMethod":  "Tahvohck_Mods.JPFariasUpdates.CameraOverhaul.Init",
-    "DisplayName":  "Camera Controls Overhaul",
-    "AssemblyName": "CameraOverhaul.dll"
+    "EntryMethod":  "FAKE STUB",
+    "DisplayName":  "Skip Intro",
+    "AssemblyName": "JPF_SkipIntro.dll"
 }

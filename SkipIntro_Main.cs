@@ -85,6 +85,7 @@ namespace Tahvohck_Mods.JPFariasUpdates
                     .GetField("mBlackBars", instanceFlags)
                     .SetValue(Intro, 0f);
                 CameraManager.getInstance().setCinematic(null);
+                Intro = null;
             }
         }
     }

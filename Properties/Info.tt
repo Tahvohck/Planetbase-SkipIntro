@@ -7,6 +7,6 @@
     "Version":      "<#= this.version #>.<#= this.buildID #>",
 
     "EntryMethod":  "FAKE STUB",
-    "DisplayName":  "Skip Intro",
+    "DisplayName":  "Skip Intro ReManaged",
     "AssemblyName": "JPF_SkipIntro.dll"
 }
